@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Опрос</title>
+</head>
+<body style="background-color: #e6f7ff; font-family: Arial, sans-serif;">
+
+    <div style="background-color: #333; padding: 10px; text-align: center;">
+        <a href="index.html" style="color: white;">На Главную</a> |
+        <a href="planets.html" style="color: white;">Планеты</a> |
+        <a href="rockets.html" style="color: white;">Ракеты</a> |
+        <a href="astronauts.html" style="color: white;">Космонавты</a> |
+        <a href="videos.html" style="color: white;">Видео</a> |
+        <a href="survey.html" style="color: white;">Опрос</a>
+    </div>
+
+    <div style="background-color: white; width: 50%; margin: 20px auto; padding: 20px; border: 2px solid #007acc;">
+        <h2 style="text-align: center; color: #007acc;">Опрос: Космос и вы</h2>
+        
+        <form action="#" method="post">
+            <p><label for="name">Ваше имя:</label></p>
+            <input type="text" id="name" name="name" placeholder="Введите имя" style="width: 100%; padding: 5px;">
+            
+            <br><br>
+            
+            <p>Хотели бы вы полететь в космос?</p>
+            <input type="radio" id="yes" name="fly" value="yes">
+            <label for="yes">Да, конечно!</label><br>
+            <input type="radio" id="no" name="fly" value="no">
+            <label for="no">Нет, боюсь</label><br>
+            <input type="radio" id="maybe" name="fly" value="maybe">
+            <label for="maybe">Затрудняюсь ответить</label>
+
+            <br><br>
+
+            <p>Ваши любимые планеты (можно выбрать несколько):</p>
+            <input type="checkbox" id="mars" name="planet" value="mars">
+            <label for="mars">Марс</label><br>
+            <input type="checkbox" id="saturn" name="planet" value="saturn">
+            <label for="saturn">Сатурн</label><br>
+            <input type="checkbox" id="earth" name="planet" value="earth">
+            <label for="earth">Земля</label>
+
+            <br><br>
+
+            <p>Оцените свои знания по астрономии:</p>
+            <select name="rating">
+                <option value="1">Новичок</option>
+                <option value="2">Любитель</option>
+                <option value="3">Эксперт</option>
+            </select>
+
+            <br><br>
+            
+            <button type="submit" style="background-color: #007acc; color: white; padding: 10px 20px; border: none; cursor: pointer;">Отправить ответы</button>
+        </form>
+    </div>
+
+</body>
+</html>
